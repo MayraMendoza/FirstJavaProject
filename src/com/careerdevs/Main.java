@@ -19,12 +19,10 @@ public class Main {
         System.out.println(reverse(false));
         // challenge 7 test
         System.out.println(countWords("Is this easy mode"));
-
         // challenge 8 test
         System.out.println(existsHigher(new int[] {5, 3, 15, 22, 4}, 10));
         // challenge 9 test
         System.out.println(getCount("Palm"));
-
     }
 
     //https://edabit.com/challenge/SquoES5RxWr4CyX6G
@@ -36,14 +34,13 @@ public class Main {
     }
 
     //https://edabit.com/challenge/Qir2pQ2Qp3uwrfJNZ
-
     //2. Create a function that takes a number as an argument, increments the number by +1 and returns the result
     public static int addition(int num) {
         int newNum = num + 1;
         return newNum;
     }
-    //https://edabit.com/challenge/3NowS55XTdfWtKh9n
 
+    //https://edabit.com/challenge/3NowS55XTdfWtKh9n
     // 3.Create a function that searches for the index of a given item in an array. If the item is present, it should return the index, otherwise, it should return -1.
     public static int search(int arr[], int item) {
         for (int i = 0; i < arr.length; i++) {
@@ -55,21 +52,23 @@ public class Main {
 
     //https://edabit.com/challenge/2t8JDxF7wLrg7yJ5E
     //4.Write a function that takes an integer minutes and converts it to seconds.
+
     public static int convert(int minutes) {
         int seconds = minutes * 60;
         return seconds;
-
     }
-
 
     //https://edabit.com/challenge/ZuoKAgmH8G2vHtLzi
     // 5. Write a function that returns
+
     public static String giveMeSomething(String a) {
         a = "something" + " " + a;
         return a;
     }
+
     //https://edabit.com/challenge/KWRQP86jxzM9SZmRM
     //6. Create a function that reverses a boolean value.
+
     public static boolean reverse(boolean b) {
         if (b == true){
             b = false;
@@ -79,22 +78,24 @@ public class Main {
         }
         return b;
     }
+
     //https://edabit.com/challenge/5LnycSd2xT4uwZCpi
     // 7.Create a method that takes a string and returns the word count. The string will be a sentence.
     // this just counts spaces -- error may occur if there are spaces after sentence ends
+
     public static int countWords(String s) {
         int wordCount = 1;
         // this is going through all the characters in string s (length())
         for (int i = 0 ; i < s.length(); i++){
             if(s.charAt(i)== ' ')
                 wordCount++;
-
         }
-
         return wordCount;
     }
+
     //https://edabit.com/challenge/aWzxPLibBLJgn8AbZ
     //8. Write a function that returns true if there exists at least one number that is larger than or equal to n.
+
     public static boolean existsHigher(int[] arr, int n) {
         if (arr.length == 0 )
             return false;
@@ -118,9 +119,6 @@ public class Main {
                 vowelsCount++;
             }
         }
-
         return vowelsCount;
     }
-
-
 }
