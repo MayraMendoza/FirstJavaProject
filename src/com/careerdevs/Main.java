@@ -62,7 +62,7 @@ public class Main {
     // 5. Write a function that returns
 
     public static String giveMeSomething(String a) {
-        a = "something" + " " + a;
+        a = "something " + a;
         return a;
     }
 
@@ -120,5 +120,21 @@ public class Main {
             }
         }
         return vowelsCount;
+    }
+
+    //https://edabit.com/challenge/9D39q2q9yAFCDM9da
+    // 11. You are given the length of a video in minutes. The format is mm:ss (e.g.: "02:54"). Create a function that takes the video length and return it in seconds.
+    public static int minutesToSeconds(String tm) {
+        // this splits at ":" index 0 will be assigned to min and index 1 will be assigned to seconds
+        String minToSec []  = tm.split(":");
+        int min= Integer.parseInt(minToSec[0]);
+        int sec= Integer.parseInt(minToSec[1]);
+
+        if(sec >= 60)
+            return -1;
+        else {
+            int seconds = min *60 + sec;
+            return seconds;
+        }
     }
 }
