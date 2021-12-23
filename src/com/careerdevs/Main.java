@@ -70,14 +70,16 @@ public class Main {
     //6. Create a function that reverses a boolean value.
 
     public static boolean reverse(boolean b) {
-        if (b == true){
-            b = false;
+        if (b == true) {
+            return false;
+        } else {
+            return true;
         }
-        else{
-            b = true;
-        }
-        return b;
     }
+    // option 2 - not operator
+    // this takes a booleans and flips it
+    // return !b;
+
 
     //https://edabit.com/challenge/5LnycSd2xT4uwZCpi
     // 7.Create a method that takes a string and returns the word count. The string will be a sentence.
@@ -122,8 +124,51 @@ public class Main {
         return vowelsCount;
     }
 
+    //https://edabit.com/challenge/8Ty2vq2YtcBp6CFc8
+    // 10. Create a method that takes two integers as arguments and return their sum.
+    public static int sum(int a, int b) {
+        return a + b;
+
+    }
+
+    //https://edabit.com/challenge/5gpukjfi5rAH8MvKF
+    // 11. Create a function that returns true when x is equal to y; otherwise return false.
+    public static boolean isSameNum(int x, int y) {
+        if(x == y){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    //https://edabit.com/challenge/eqcCH2WbEXFLDyiQi
+    // 12.Create a function that takes the age in years and returns the age in days.
+    public static int calcAge(int age) {
+        return age * 365;
+    }
+
+    //https://edabit.com/challenge/JAtN6KLtahAkmT3n3
+    // 13. Create a function that takes a name and returns a greeting in the form of a string.
+    public static String helloName(String name) {
+        return "Hello " + name + "!";
+    }
+
+    //https://edabit.com/challenge/5gPCp7v7iDWZvb4YQ
+    // 14.Create a method that takes a string as its argument and returns the string in reversed order.
+    public static String reverse(final String str) {
+        String reversed = "";
+        // need to add -1 because str length counts index 0(as 1)
+        // i will be the last number. this for loop will count down
+        // str.charAt will go through each character.
+        for (int i = str.length() -1 ; i >= 0 ; i--){
+            reversed =  reversed + str.charAt(i);
+        }
+        return reversed;
+    }
+
+    // --------------------BONUS ----------------------------------
     //https://edabit.com/challenge/9D39q2q9yAFCDM9da
-    // 11. You are given the length of a video in minutes. The format is mm:ss (e.g.: "02:54"). Create a function that takes the video length and return it in seconds.
+    // You are given the length of a video in minutes. The format is mm:ss (e.g.: "02:54"). Create a function that takes the video length and return it in seconds.
     public static int minutesToSeconds(String tm) {
         // this splits at ":" index 0 will be assigned to min and index 1 will be assigned to seconds
         String minToSec []  = tm.split(":");
@@ -135,6 +180,39 @@ public class Main {
         else {
             int seconds = min *60 + sec;
             return seconds;
+        }
+    }
+    //https://edabit.com/challenge/B4HjZbBh9yuELmjna
+    // area of a triangle
+
+    public static int triArea(int base, int height) {
+        return base *height / 2;
+    }
+
+     //https://edabit.com/challenge/KnRj8TSD63JBpzDfi
+    //Multiple of 100
+
+    public static boolean divisible(int num) {
+        if (num % 100 == 0){
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    //https://edabit.com/challenge/rYD9NTBmNhaPM6wx2
+    // Capture the Rook
+
+    public static boolean canCapture(String[] rooks) {
+        //Two rooks can attack each other if they share the same row (letter) or column (number).
+        // string will be h1 h1
+        String rook1 = rooks[0];
+        String rook2 = rooks[1];
+
+        if (rook1.charAt(0) == rook2.charAt(0)|| rook1.charAt(1) == rook2.charAt(1) ){
+            return true;
+        }else {
+            return false;
         }
     }
 }
