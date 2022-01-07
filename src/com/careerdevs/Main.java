@@ -23,6 +23,19 @@ public class Main {
         System.out.println(existsHigher(new int[] {5, 3, 15, 22, 4}, 10));
         // challenge 9 test
         System.out.println(getCount("Palm"));
+        // challenge 15 test
+        System.out.println("challenge 15");
+        System.out.println(AlgorithmsBonus.makesTen(7,0));
+        System.out.println(AlgorithmsBonus.makesTen(10,0));
+        // challenge 16 test
+        System.out.println(AlgorithmsBonus.numberSyllables("pas-try"));
+        System.out.println(AlgorithmsBonus.numberSyllables("mon-u-men-tal"));
+        // challenge 17 test
+        System.out.println(AlgorithmsBonus.match("Cat","CAT"));
+        System.out.println(AlgorithmsBonus.match("Dog","cat"));
+        // challenge 18
+        System.out.println(AlgorithmsBonus.hackerSpeak("Happy Birthday"));
+        System.out.println(AlgorithmsBonus.hackerSpeak("aeios"));
     }
 
     //https://edabit.com/challenge/SquoES5RxWr4CyX6G
@@ -94,6 +107,12 @@ public class Main {
         }
         return wordCount;
     }
+
+//    public static int countWords(String s) {
+//        String [] count = s.split(" ");
+//        return count.length;
+//
+//    }
 
     //https://edabit.com/challenge/aWzxPLibBLJgn8AbZ
     //8. Write a function that returns true if there exists at least one number that is larger than or equal to n.
