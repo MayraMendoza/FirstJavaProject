@@ -10,7 +10,10 @@ package com.careerdevs;
 public class Recursion {
     public static void main(String[] args) {
 
-        System.out.println( sum(5));
+        // without recursion
+        System.out.println( countDown(5));
+        // with recursion
+        System.out.println(sum(5));
 
     }
     public static int sum(int n ){
@@ -24,5 +27,13 @@ public class Recursion {
 
         }
 
+    }
+
+    public static int countDown(int n ){
+        int a = 0;
+        for (int i = n; i >=0; i--){
+            a = a +i;
+        }
+        return a;
     }
 }
