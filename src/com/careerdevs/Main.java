@@ -11,6 +11,7 @@ public class Main {
         System.out.println(addition(73));
         // challenge 3 test
         System.out.println(search(new int[]{2, 4, 6, 8, 10}, 8));
+        System.out.println(search(new int[]{1, 3, 5, 7, 9}, 11));
         // challenge 4 test
         System.out.println(convert(6));
         // challenge 5 test
