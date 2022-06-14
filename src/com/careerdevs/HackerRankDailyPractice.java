@@ -36,20 +36,55 @@ public class HackerRankDailyPractice {
 
         scanner.close();
         String whatIs = null;
-        if (N % 2 == 0){
-            if(2<=N && N<=5 ){
+        if (N % 2 == 0) {
+            if (2 <= N && N <= 5) {
                 whatIs = "Not Weird";
 
-            }else if(6<=N && N<=20){
+            } else if (6 <= N && N <= 20) {
                 whatIs = "Weird";
-            }else if(N> 20){
+            } else if (N > 20) {
                 whatIs = "Not Weird";
             }
-        }
-        else if (N%2 != 0){
+        } else if (N % 2 != 0) {
             whatIs = "Weird";
         }
         System.out.println(whatIs);
+
+
+        // 4.Java Stdin and Stdout II
+        // in this challenge, you must read an integer, a double, and a String from stdin, then print the values
+        Scanner scan = new Scanner(System.in);
+        int i = scan.nextInt();
+        Double d = scan.nextDouble();
+        scan.nextLine();
+        String s = scan.nextLine();
+        // String a = scan.nextLine();
+
+        // s= s+a;
+
+        // Write your code here.
+
+        System.out.println("String: " + s);
+        System.out.println("Double: " + d);
+        System.out.println("Int: " + i);
+
+        //5.Java output formatting
+
+        // formatting -15 is the space in the first chunck
+        // %03d meaning that 3 decimals will be present at all times - 009 - 099 -999
+        //%n ,prints new line if not put then it will all print out on the same line with lots of spaces inbetween.
+        Scanner sc = new Scanner(System.in);
+        System.out.println("================================");
+        for (int j = 0; j < 3; j++) {
+            String s1 = sc.next();
+            int x = sc.nextInt();
+            //Complete this line
+            System.out.printf("%-15s%03d%n", s1, x);
+        }
+        System.out.println("================================");
+
     }
-}
+
+    }
+
 
