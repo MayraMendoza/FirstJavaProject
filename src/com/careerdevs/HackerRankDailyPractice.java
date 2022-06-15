@@ -34,7 +34,7 @@ public class HackerRankDailyPractice {
         scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
 
 
-        scanner.close();
+//        scanner.close();
         String whatIs = null;
         if (N % 2 == 0) {
             if (2 <= N && N <= 5) {
@@ -53,11 +53,12 @@ public class HackerRankDailyPractice {
 
         // 4.Java Stdin and Stdout II
         // in this challenge, you must read an integer, a double, and a String from stdin, then print the values
-        Scanner scan = new Scanner(System.in);
-        int i = scan.nextInt();
-        Double d = scan.nextDouble();
-        scan.nextLine();
-        String s = scan.nextLine();
+
+
+        int e = scanner.nextInt();
+        Double d = scanner.nextDouble();
+        scanner.nextLine();
+        String s = scanner.nextLine();
         // String a = scan.nextLine();
 
         // s= s+a;
@@ -66,25 +67,42 @@ public class HackerRankDailyPractice {
 
         System.out.println("String: " + s);
         System.out.println("Double: " + d);
-        System.out.println("Int: " + i);
-
+        System.out.println("Int: " + e);
+//
         //5.Java output formatting
 
         // formatting -15 is the space in the first chunck
         // %03d meaning that 3 decimals will be present at all times - 009 - 099 -999
         //%n ,prints new line if not put then it will all print out on the same line with lots of spaces inbetween.
-        Scanner sc = new Scanner(System.in);
+
         System.out.println("================================");
         for (int j = 0; j < 3; j++) {
-            String s1 = sc.next();
-            int x = sc.nextInt();
+            String s1 = scanner.next();
+            int x = scanner.nextInt();
             //Complete this line
             System.out.printf("%-15s%03d%n", s1, x);
         }
         System.out.println("================================");
 
+
+        //6.loops
+        System.out.println("Please enter a number 1-20 inclusive ");
+
+        int q = scanner.nextInt();
+
+
+
+        for(int j =1; j<=10; j++){
+            // int answer = N*i;
+            System.out.println(q +" x " +j + " = " + (q*j) );
+        }
     }
 
+
+
+
     }
+
+
 
 
