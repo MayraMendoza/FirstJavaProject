@@ -12,6 +12,7 @@ public class HackerRankProblem6to12 {
             int n = in.nextInt();
             for(int j=0 ; j<n; j++){
                 System.out.print(a + (2^j * b)^n-i);
+
             }
         }
         in.close();
