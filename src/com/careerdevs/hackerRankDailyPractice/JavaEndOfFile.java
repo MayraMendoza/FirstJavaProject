@@ -18,6 +18,7 @@ public class JavaEndOfFile {
         Scanner scan = new Scanner(System.in);
 
 
+
         /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
         int number = 1 ;
         while(scan.hasNext()){
