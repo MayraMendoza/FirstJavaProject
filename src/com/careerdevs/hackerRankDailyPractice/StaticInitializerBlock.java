@@ -11,6 +11,8 @@ public class StaticInitializerBlock {
     static boolean flag = true;
     static {
         Scanner sc = new Scanner(System.in);
+
+
         B = sc.nextInt();
         H = sc.nextInt();
         if(B<=0 || H<=0){
